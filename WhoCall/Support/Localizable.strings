@@ -6,8 +6,8 @@
   Copyright (c) 2013 Wang Xiaolei. All rights reserved.
 */
 
-"I_KNOW" = "知道了";
+"I_KNOW" = "Got it";
 
-"SETTING_TITLE" = "谁 call 我";
+"SETTING_TITLE" = "WhoCall";
 
-"SETTING_CONTACT_NO_ACCESS" = "无法使用联系人信息，请先到\n[设置]-[隐私]-[联系人]\n允许该App使用联系人信息。";
+"SETTING_CONTACT_NO_ACCESS" = "Unable to access contacts，Go to \n[Settings]-[Privacy]-[Contacts]\n to grant this application please.";
