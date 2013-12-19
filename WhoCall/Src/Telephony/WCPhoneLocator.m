@@ -66,7 +66,6 @@
             if ([s next]) {
                 NSArray *locationStrings = [[NSArray alloc] initWithObjects:[s stringForColumnIndex:0], [s stringForColumnIndex:1], nil];
                 location = [locationStrings componentsJoinedByString:@" "];
-                NSLog(location);
                 [s close];
             }
         } else {
