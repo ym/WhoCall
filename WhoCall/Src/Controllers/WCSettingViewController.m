@@ -40,7 +40,6 @@
     WCCallInspector *inspector = [WCCallInspector sharedInspector];
     self.switchLiar.on = inspector.handleLiarPhone;
     self.switchLocation.on = inspector.handlePhoneLocation;
-    self.switchContact.on = inspector.handleContactName;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -55,15 +54,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    
-    if (cell == self.cellOtherApps) {
-        UIStoryboard *settingStoryboard = [UIStoryboard storyboardWithName:@"WCSetting" bundle:nil];
-        WCSettingViewController *appsController = [settingStoryboard instantiateViewControllerWithIdentifier:@"OtherApps"];
-        [self.navigationController pushViewController:appsController animated:YES];
-    }
-    
+{    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
@@ -74,36 +65,6 @@
         inspector.handleLiarPhone = sender.on;
     } else if (sender == self.switchLocation) {
         inspector.handlePhoneLocation = sender.on;
-    } else if (sender == self.switchContact) {
-        inspector.handleContactName = sender.on;
-        if (sender.on) {
-            // 根据通讯录的访问权限，有不同的处理
-            switch (ABAddressBookGetAuthorizationStatus()) {
-                case kABAuthorizationStatusNotDetermined:
-                {
-                    ABAddressBookRef addrBook = ABAddressBookCreateWithOptions(nil, NULL);
-                    ABAddressBookRequestAccessWithCompletion(addrBook, ^(bool granted, CFErrorRef error){
-                        if (!granted) {
-                            sender.on = NO;
-                            inspector.handleContactName = NO;
-                            [inspector saveSettings];
-                        }
-                        CFRelease(addrBook);
-                    });
-                    break;
-                }
-                case kABAuthorizationStatusDenied:
-                {
-                    sender.on = NO;
-                    [UIAlertView alertViewWithTitle:nil
-                                            message:NSLocalizedString(@"SETTING_CONTACT_NO_ACCESS", nil)
-                                  cancelButtonTitle:NSLocalizedString(@"I_KNOW", nil)];
-                    break;
-                }
-                default:
-                    break;
-            }
-        }
     }
     [inspector saveSettings];
 }

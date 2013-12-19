@@ -30,7 +30,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        NSString *dbFile = [[NSBundle mainBundle] pathForResource:@"telocation" ofType:@"db"];
+        NSString *dbFile = [[NSBundle mainBundle] pathForResource:@"mobile" ofType:@"sqlite"];
         self.db = [FMDatabase databaseWithPath:dbFile];
         
         if (![self.db open]) {
@@ -60,18 +60,14 @@
         [self.db open];
         
         if (isMobilePhone) {
-            // 手机号取前7位，查到固话区号，再查地址
+            // 手机号取前7位
             NSString *prefix = [phoneNumber substringToIndex:7];
-            FMResultSet *s = [self.db executeQuery:@"SELECT areacode FROM mob_location where _id=?", prefix];
+            FMResultSet *s = [self.db executeQuery:@"SELECT city, cardtype FROM mobile where code=?", prefix];
             if ([s next]) {
-                NSInteger areacode = [s intForColumnIndex:0];
+                NSArray *locationStrings = [[NSArray alloc] initWithObjects:[s stringForColumnIndex:0], [s stringForColumnIndex:1], nil];
+                location = [locationStrings componentsJoinedByString:@" "];
+                NSLog(location);
                 [s close];
-                
-                s = [self.db executeQuery:@"SELECT location FROM tel_location where _id=?", @(areacode)];
-                if ([s next]) {
-                    location = [s stringForColumnIndex:0];
-                    [s close];
-                }
             }
         } else {
             if (isForeign) {
@@ -87,7 +83,7 @@
                     areacode = [phoneNumber substringWithRange:NSMakeRange(1, 3)];
                 }
                 
-                FMResultSet *s = [self.db executeQuery:@"SELECT location FROM tel_location where _id=?", @([areacode integerValue])];
+                FMResultSet *s = [self.db executeQuery:@"SELECT location FROM telephone where _id=?", @([areacode integerValue])];
                 if ([s next]) {
                     location = [s stringForColumnIndex:0];
                     [s close];

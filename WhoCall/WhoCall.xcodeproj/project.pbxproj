@@ -30,7 +30,6 @@
 		466216951838FF35008DC8FA /* icon_spam@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 466216931838FF35008DC8FA /* icon_spam@2x.png */; };
 		466216981839014A008DC8FA /* icon_nobody.png in Resources */ = {isa = PBXBuildFile; fileRef = 466216961839014A008DC8FA /* icon_nobody.png */; };
 		466216991839014A008DC8FA /* icon_nobody@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 466216971839014A008DC8FA /* icon_nobody@2x.png */; };
-		466216D9183A46B4008DC8FA /* WCOtherAppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216D8183A46B4008DC8FA /* WCOtherAppsViewController.m */; };
 		466216DD183A630F008DC8FA /* WCCallCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216DC183A630F008DC8FA /* WCCallCenter.m */; };
 		466216E0183A6319008DC8FA /* WCCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216DF183A6319008DC8FA /* WCCall.m */; };
 		466216E3183A6EFD008DC8FA /* WCCallInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216E2183A6EFD008DC8FA /* WCCallInspector.m */; };
@@ -39,7 +38,6 @@
 		466216EC183BA2D2008DC8FA /* WCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216EB183BA2D2008DC8FA /* WCUtil.m */; };
 		466216EE183BA363008DC8FA /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466216ED183BA363008DC8FA /* AddressBook.framework */; };
 		466216F3183BB2DC008DC8FA /* UIAlertView+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216F2183BB2DC008DC8FA /* UIAlertView+MKBlockAdditions.m */; };
-		466216F5183C47B6008DC8FA /* telocation.db in Resources */ = {isa = PBXBuildFile; fileRef = 466216F4183C47B6008DC8FA /* telocation.db */; };
 		466216F8183C49AF008DC8FA /* WCPhoneLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216F7183C49AF008DC8FA /* WCPhoneLocator.m */; };
 		46621705183C4AFD008DC8FA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216FB183C4AFD008DC8FA /* FMDatabase.m */; };
 		46621706183C4AFD008DC8FA /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216FD183C4AFD008DC8FA /* FMDatabaseAdditions.m */; };
@@ -48,6 +46,7 @@
 		4662170A183C4AFD008DC8FA /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 46621704183C4AFD008DC8FA /* FMResultSet.m */; };
 		4662170C183C521F008DC8FA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4662170B183C521F008DC8FA /* libsqlite3.dylib */; };
 		46621716183D11A1008DC8FA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46621715183D11A1008DC8FA /* libz.dylib */; };
+		9C32158E1863069E00F2951F /* mobile.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9C32158D1863069E00F2951F /* mobile.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,8 +80,6 @@
 		466216931838FF35008DC8FA /* icon_spam@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_spam@2x.png"; sourceTree = "<group>"; };
 		466216961839014A008DC8FA /* icon_nobody.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_nobody.png; sourceTree = "<group>"; };
 		466216971839014A008DC8FA /* icon_nobody@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_nobody@2x.png"; sourceTree = "<group>"; };
-		466216D7183A46B4008DC8FA /* WCOtherAppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCOtherAppsViewController.h; sourceTree = "<group>"; };
-		466216D8183A46B4008DC8FA /* WCOtherAppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCOtherAppsViewController.m; sourceTree = "<group>"; };
 		466216DB183A630F008DC8FA /* WCCallCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCallCenter.h; sourceTree = "<group>"; };
 		466216DC183A630F008DC8FA /* WCCallCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCallCenter.m; sourceTree = "<group>"; };
 		466216DE183A6319008DC8FA /* WCCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCall.h; sourceTree = "<group>"; };
@@ -99,7 +96,6 @@
 		466216F0183BB2DC008DC8FA /* MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBlockAdditions.h; sourceTree = "<group>"; };
 		466216F1183BB2DC008DC8FA /* UIAlertView+MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKBlockAdditions.h"; sourceTree = "<group>"; };
 		466216F2183BB2DC008DC8FA /* UIAlertView+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKBlockAdditions.m"; sourceTree = "<group>"; };
-		466216F4183C47B6008DC8FA /* telocation.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = telocation.db; sourceTree = "<group>"; };
 		466216F6183C49AE008DC8FA /* WCPhoneLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPhoneLocator.h; sourceTree = "<group>"; };
 		466216F7183C49AF008DC8FA /* WCPhoneLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPhoneLocator.m; sourceTree = "<group>"; };
 		466216FA183C4AFD008DC8FA /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -114,6 +110,7 @@
 		46621704183C4AFD008DC8FA /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		4662170B183C521F008DC8FA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		46621715183D11A1008DC8FA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9C32158D1863069E00F2951F /* mobile.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mobile.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,7 +207,7 @@
 				461320831838A6A7006634C7 /* WhoCall-Info.plist */,
 				461320841838A6A7006634C7 /* InfoPlist.strings */,
 				466216861838B8F2008DC8FA /* Localizable.strings */,
-				466216F4183C47B6008DC8FA /* telocation.db */,
+				9C32158D1863069E00F2951F /* mobile.sqlite */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -241,8 +238,6 @@
 				466216881838DEFC008DC8FA /* WCSetting.storyboard */,
 				466216811838B767008DC8FA /* WCSettingViewController.h */,
 				466216821838B767008DC8FA /* WCSettingViewController.m */,
-				466216D7183A46B4008DC8FA /* WCOtherAppsViewController.h */,
-				466216D8183A46B4008DC8FA /* WCOtherAppsViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -324,7 +319,7 @@
 				ORGANIZATIONNAME = "Wang Xiaolei";
 				TargetAttributes = {
 					461320461838A357006634C7 = {
-						DevelopmentTeam = CZ2PUS96XT;
+						DevelopmentTeam = UWJNW4W35M;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -365,7 +360,7 @@
 				466216891838DEFC008DC8FA /* WCSetting.storyboard in Resources */,
 				4613208B1838A788006634C7 /* InfoPlist.strings in Resources */,
 				466216901838FF2A008DC8FA /* icon_contact.png in Resources */,
-				466216F5183C47B6008DC8FA /* telocation.db in Resources */,
+				9C32158E1863069E00F2951F /* mobile.sqlite in Resources */,
 				461320861838A6A7006634C7 /* AppImages.xcassets in Resources */,
 				466216801838B729008DC8FA /* MMPSilence.wav in Resources */,
 				466216951838FF35008DC8FA /* icon_spam@2x.png in Resources */,
@@ -380,7 +375,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				466216D9183A46B4008DC8FA /* WCOtherAppsViewController.m in Sources */,
 				466216E3183A6EFD008DC8FA /* WCCallInspector.m in Sources */,
 				461320881838A6A7006634C7 /* WCAppDelegate.m in Sources */,
 				46621705183C4AFD008DC8FA /* FMDatabase.m in Sources */,
