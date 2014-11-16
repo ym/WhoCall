@@ -12,7 +12,6 @@
 #import "WCCallCenter.h"
 #import "WCAddressBook.h"
 #import "WCLiarPhoneList.h"
-#import "WCPhoneLocator.h"
 
 
 // 保存设置key
@@ -89,28 +88,15 @@
     
     BOOL isContact = [[WCAddressBook defaultAddressBook] isContactPhoneNumber:number];
     
-    // 检查归属地
-    void (^checkPhoneLocation)(void) = ^{
-        if (self.handlePhoneLocation && !isContact) {
-            NSString *location = [[WCPhoneLocator sharedLocator] locationForPhoneNumber:number];
-            if (location) {
-                // 注意格式，除了地址，还可以有“本地”等
-                [self notifyMessage: location];
-            }
-        }
-    };
+    NSLog(@"Call from %@", number);
     
     // 欺诈电话联网查，等待查询结束才能知道要不要提示地点
     if (self.handleLiarPhone && !isContact) {
         [[WCLiarPhoneList sharedList] checkLiarNumber:number withCompletion:^(NSString *liarInfo) {
             if (liarInfo.length != 0) {
                 [self notifyMessage: liarInfo];
-            } else {
-                checkPhoneLocation();
             }
         }];
-    } else {
-        checkPhoneLocation();
     }
 }
 
