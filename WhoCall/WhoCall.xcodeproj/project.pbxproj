@@ -32,13 +32,11 @@
 		466216991839014A008DC8FA /* icon_nobody@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 466216971839014A008DC8FA /* icon_nobody@2x.png */; };
 		466216DD183A630F008DC8FA /* WCCallCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216DC183A630F008DC8FA /* WCCallCenter.m */; };
 		466216E0183A6319008DC8FA /* WCCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216DF183A6319008DC8FA /* WCCall.m */; };
-		466216E3183A6EFD008DC8FA /* WCCallInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216E2183A6EFD008DC8FA /* WCCallInspector.m */; };
 		466216E6183BA292008DC8FA /* WCAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216E5183BA292008DC8FA /* WCAddressBook.m */; };
 		466216E9183BA29E008DC8FA /* WCLiarPhoneList.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216E8183BA29E008DC8FA /* WCLiarPhoneList.m */; };
 		466216EC183BA2D2008DC8FA /* WCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216EB183BA2D2008DC8FA /* WCUtil.m */; };
 		466216EE183BA363008DC8FA /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466216ED183BA363008DC8FA /* AddressBook.framework */; };
 		466216F3183BB2DC008DC8FA /* UIAlertView+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216F2183BB2DC008DC8FA /* UIAlertView+MKBlockAdditions.m */; };
-		466216F8183C49AF008DC8FA /* WCPhoneLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216F7183C49AF008DC8FA /* WCPhoneLocator.m */; };
 		46621705183C4AFD008DC8FA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216FB183C4AFD008DC8FA /* FMDatabase.m */; };
 		46621706183C4AFD008DC8FA /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216FD183C4AFD008DC8FA /* FMDatabaseAdditions.m */; };
 		46621707183C4AFD008DC8FA /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 466216FF183C4AFD008DC8FA /* FMDatabasePool.m */; };
@@ -47,6 +45,7 @@
 		4662170C183C521F008DC8FA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4662170B183C521F008DC8FA /* libsqlite3.dylib */; };
 		46621716183D11A1008DC8FA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46621715183D11A1008DC8FA /* libz.dylib */; };
 		9C32158E1863069E00F2951F /* mobile.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9C32158D1863069E00F2951F /* mobile.sqlite */; };
+		AC8B83601A18A244009C60A2 /* WCCallInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8B835F1A18A244009C60A2 /* WCCallInspector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,10 +84,8 @@
 		466216DE183A6319008DC8FA /* WCCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCall.h; sourceTree = "<group>"; };
 		466216DF183A6319008DC8FA /* WCCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCall.m; sourceTree = "<group>"; };
 		466216E1183A6EFD008DC8FA /* WCCallInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCallInspector.h; sourceTree = "<group>"; };
-		466216E2183A6EFD008DC8FA /* WCCallInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCallInspector.m; sourceTree = "<group>"; };
 		466216E4183BA292008DC8FA /* WCAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCAddressBook.h; sourceTree = "<group>"; };
 		466216E5183BA292008DC8FA /* WCAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCAddressBook.m; sourceTree = "<group>"; };
-		466216E7183BA29E008DC8FA /* WCLiarPhoneList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLiarPhoneList.h; sourceTree = "<group>"; };
 		466216E8183BA29E008DC8FA /* WCLiarPhoneList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLiarPhoneList.m; sourceTree = "<group>"; };
 		466216EA183BA2D2008DC8FA /* WCUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCUtil.h; sourceTree = "<group>"; };
 		466216EB183BA2D2008DC8FA /* WCUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCUtil.m; sourceTree = "<group>"; };
@@ -96,8 +93,6 @@
 		466216F0183BB2DC008DC8FA /* MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBlockAdditions.h; sourceTree = "<group>"; };
 		466216F1183BB2DC008DC8FA /* UIAlertView+MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKBlockAdditions.h"; sourceTree = "<group>"; };
 		466216F2183BB2DC008DC8FA /* UIAlertView+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKBlockAdditions.m"; sourceTree = "<group>"; };
-		466216F6183C49AE008DC8FA /* WCPhoneLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPhoneLocator.h; sourceTree = "<group>"; };
-		466216F7183C49AF008DC8FA /* WCPhoneLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPhoneLocator.m; sourceTree = "<group>"; };
 		466216FA183C4AFD008DC8FA /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		466216FB183C4AFD008DC8FA /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		466216FC183C4AFD008DC8FA /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -111,6 +106,8 @@
 		4662170B183C521F008DC8FA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		46621715183D11A1008DC8FA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		9C32158D1863069E00F2951F /* mobile.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = mobile.sqlite; sourceTree = "<group>"; };
+		AC8B835E1A18A22E009C60A2 /* WCLiarPhoneList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLiarPhoneList.h; sourceTree = "<group>"; };
+		AC8B835F1A18A244009C60A2 /* WCCallInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCallInspector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,12 +248,10 @@
 				466216DF183A6319008DC8FA /* WCCall.m */,
 				466216DB183A630F008DC8FA /* WCCallCenter.h */,
 				466216DC183A630F008DC8FA /* WCCallCenter.m */,
+				AC8B835F1A18A244009C60A2 /* WCCallInspector.m */,
 				466216E1183A6EFD008DC8FA /* WCCallInspector.h */,
-				466216E2183A6EFD008DC8FA /* WCCallInspector.m */,
-				466216E7183BA29E008DC8FA /* WCLiarPhoneList.h */,
+				AC8B835E1A18A22E009C60A2 /* WCLiarPhoneList.h */,
 				466216E8183BA29E008DC8FA /* WCLiarPhoneList.m */,
-				466216F6183C49AE008DC8FA /* WCPhoneLocator.h */,
-				466216F7183C49AF008DC8FA /* WCPhoneLocator.m */,
 			);
 			path = Telephony;
 			sourceTree = "<group>";
@@ -319,7 +314,7 @@
 				ORGANIZATIONNAME = "Wang Xiaolei";
 				TargetAttributes = {
 					461320461838A357006634C7 = {
-						DevelopmentTeam = UWJNW4W35M;
+						DevelopmentTeam = YELLCVNF6U;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -375,12 +370,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				466216E3183A6EFD008DC8FA /* WCCallInspector.m in Sources */,
+				AC8B83601A18A244009C60A2 /* WCCallInspector.m in Sources */,
 				461320881838A6A7006634C7 /* WCAppDelegate.m in Sources */,
 				46621705183C4AFD008DC8FA /* FMDatabase.m in Sources */,
 				466216DD183A630F008DC8FA /* WCCallCenter.m in Sources */,
 				4662170A183C4AFD008DC8FA /* FMResultSet.m in Sources */,
-				466216F8183C49AF008DC8FA /* WCPhoneLocator.m in Sources */,
 				466216E9183BA29E008DC8FA /* WCLiarPhoneList.m in Sources */,
 				466216E0183A6319008DC8FA /* WCCall.m in Sources */,
 				461320871838A6A7006634C7 /* main.m in Sources */,
@@ -490,6 +484,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Src/WhoCall-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Support/WhoCall-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -501,10 +496,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Src/WhoCall-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Support/WhoCall-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
